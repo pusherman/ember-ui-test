@@ -17,4 +17,13 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-module.exports = app.toTree();
+// load external fa fonts
+var pickFiles = require('broccoli-static-compiler');
+var faFonts = pickFiles('bower_components/fontawesome', {
+  srcDir: '/fonts',
+  destDir: '/assets/fonts'
+});
+
+var mergeTrees = require('broccoli-merge-trees');
+
+module.exports = mergeTrees([app.toTree(), faFonts]);
