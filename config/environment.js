@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'fyibnjs',
+    modulePrefix: 'fyibn-ui',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
