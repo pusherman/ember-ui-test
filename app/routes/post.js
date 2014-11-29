@@ -4,6 +4,6 @@ export default Ember.Route.extend({
   model: function() {
     return {
       title: 'Test Post'
-    }
+    };
   }
 });
