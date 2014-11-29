@@ -18,6 +18,11 @@ module.exports = function(environment) {
       // when it is created
     },
 
+    API: {
+      namespace: 'api/v1',
+      host: 'http://localhost:8000'
+    },
+
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
