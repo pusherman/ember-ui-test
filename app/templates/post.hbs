@@ -6,11 +6,15 @@
   <div class="col-md-11">
     <section id="post-details">
       <h2>
-        A sample post
+        {{#if url}}
+          <a target="_blank" href="{{unbound url}}">{{unbound title}}</a>
+        {{else}}
+          {{title}}
+        {{/if}}
         <br>
         <small>
           by corey
-          20 mins ago
+          {{ago created_at}}
         </small>
       </h2>
     </section>
