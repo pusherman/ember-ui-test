@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "broccoli-merge-trees": "^0.2.1",
-    "broccoli-static-compiler": "^0.2.1"
+    "broccoli-static-compiler": "^0.2.1",
+    "ember-moment": "^1.0.0"
   }
 }
