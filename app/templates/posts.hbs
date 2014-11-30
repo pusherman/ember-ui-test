@@ -1,5 +1,6 @@
 <table class="table" id="post-table">
   <tbody>
+
     {{#each}}
     <tr>
       <td>heart</td>
@@ -17,15 +18,16 @@
 
       <td style="width:20%">
         <div class="pull-right">
-          <a href="post/view/3#new">
+          {{#link-to 'post' id}}
             10 comments
-          </a>
+          {{/link-to}}
           <br>
           <small>last by corey</small>
         </div>
       </td>
     </tr>
     {{/each}}
+
   </tbody>
 </table>
 
